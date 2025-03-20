@@ -50,10 +50,10 @@ void Coordinate::move(const char d)
 	switch (d)
 	{
 	case 'N':
-		_y++;
+		_y--;
 		break;
 	case 'S':
-		_y--;
+		_y++;
 		break;
 	case 'E':
 		_x++;

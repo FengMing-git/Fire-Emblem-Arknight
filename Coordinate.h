@@ -1,6 +1,7 @@
 #ifndef COORDINATE_H
 #define COORDINATE_H
 #include<cmath>
+
 class Coordinate
 {
 private:
