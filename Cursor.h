@@ -1,6 +1,7 @@
 #ifndef CURSOR_H
 #define CURSOR_H
 #include"Coordinate.h"
+
 class Cursor
 {
 private:
@@ -11,12 +12,17 @@ private:
 	// 1 - 透明光标，看不到，也不会闪烁
 
 	int _flash;				// 闪烁的状态
-	// 0 - 看不见
-	// 1 - 看得见
+	// 非正数 - 看不见
+	// 正数   - 看得见
+
+	int _flash_t;			// 闪烁的周期
 public:
 	Cursor();
 
 	~Cursor();
+
+	// 返回光标的位置
+	Coordinate get_pos();
 
 	// 光标移动
 	void move(char d);
